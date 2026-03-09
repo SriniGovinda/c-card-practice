@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: transaction-service
+  datasource:
+    url:
+    username: postgres
+    password: postgres
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  logging:
+    level:
+      org.hibernate.SQL: debug
